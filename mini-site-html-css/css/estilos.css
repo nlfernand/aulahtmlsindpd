@@ -1,0 +1,173 @@
+
+/* Seletor tag para body */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/tarde.jpg);
+    background-attachment: fixed;
+
+}
+
+#container{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    /*          x y desfoque espalhamento cor */
+    box-shadow: 2px 2px 50px 10px rgb(150, 52, 52);
+    /* espaçamento dentro da div */
+    padding: 12px;
+    /* borda aredondadas */
+    border-radius: 30px;
+
+    max-width: 900px;
+    min-width: 500px;
+}
+/* tornando as imagens flexíveis/responsíveis */
+img{ max-width: 100;}
+h1 {
+    text-align: center;
+    background-color:darkblue ;
+    color: white;
+    /* Espaçamento para cima */
+    padding-top: 20px;
+    /* Espaçamento para baixo */
+    padding-bottom: 20px;
+    /* Espaçamento em cima */
+    margin: 0;
+}
+
+h2 {
+    background:  linear-gradient(to right,transparent,darkblue);
+    padding: 8px;
+    color: whitesmoke;
+    /* Configuração de sombra com valore positivos para direita e para baixo e após a virgula temos a configuração de sombras com valore negativos da esquerda para cima  */
+    text-shadow: 1px 1px 5px black,-1px -1px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+p{
+    font-size: 18px;
+}
+/* Seletor CLASSE */
+.centralizar{
+    text-align: center;
+}
+/* Coloca um preechimento em amarelo aonde tinha negrito */
+b{
+    background-color: yellowgreen;
+}
+/* sombra no texto  1 px - distancia 1 px - distanci 3px - distancia*/
+.sombra-texto{ text-shadow: 1px 1px 3px darkblue ; 
+}
+.destaque {  background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 2px;
+
+}
+
+a {
+    /* remove o sublinhado*/
+    text-decoration: none;
+    color: blue;
+    font-weight: bold; 
+
+}
+
+nav {
+    text-align: center;
+    margin-top: 16px;
+}
+/* Seletor descendente */
+nav a {
+    font-size: 18px;
+     background-color: aquamarine; 
+     padding: 8px;
+     width: 30.30%;
+     display: inline-block;
+     /* Alterando o comportamento do box model mais moderno */
+     box-sizing: border-box;
+
+}
+/*  grupos de seletores Pseudo-classes :houver e :focus(para funcionar com tab no computador) */
+nav a:hover, nav a:focus{
+    background-color: black;
+    color: white;
+}
+
+li a{
+    color: black;
+    font-size: 22px;
+}
+li a:hover, li a:focus{ color: blue;}
+
+/* Versão mais antiga para mudança de marcador */
+/* ul li { list-style-image: url(../imagens/item-lista.gif);} */
+
+
+/* Versão mais moderna para mudança de marcador usando um seletor pseudo-elemento*/
+ul li::marker{content: "😁";
+
+}
+
+ol li{ 
+    list-style-type: lower-latin;
+}
+/*  Pega o primeiro elemento filho de uma ol */
+ol li:first-child{
+    color: rgb(50, 165, 42);
+}
+
+ol li:last-child{
+    color: chocolate;
+}
+/* Pega o segundo elemento da lista ordenada  */
+ol li:nth-child(4){
+    color: blueviolet;
+}
+/* Coloca em negrito 1,2,3 e assim sucetivamente. */
+ol li:nth-child(odd){
+    font-weight: bold;
+}
+/* Coloca os elementos pares, nesse caso colocamos em italicos. */
+ol li:nth-child(even){
+    font-style: italic;
+}
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    border-bottom: solid blue 8px;
+    filter: grayscale(100%) ;
+    transform: scale(0.90);
+    transition: 1s;
+
+}
+
+figure img:hover {
+    filter: none;
+    transform: scale(1);
+}
+
+figcaption {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+hr {
+    height: 12px;
+    background-image: url(../imagens/fundo01.png);
+    border: none;
+    opacity: 0.5;
+}
+
+h3 {
+color: blue;
+font-size: 20px;
+}
+ p { 
+    font-style: italic; }
+
